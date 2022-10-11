@@ -165,10 +165,8 @@ p#cuoi1{color: 	#FFFF00; text-align: center;
 		flex-flow: column wrap;}
 		#left{border-right: none;
 			border-left: none;}
-		body{    background-image: url("img/chuacau.jpg");
-    background-attachment: fixed;
-    background-repeat:repeat;
-    background-size: 100%;}
+		body{   background-image: none;
+background:#0c192c ;}
     #gioi img{display: none;}
     div#gioi{height: 520px;}
     div#gioithieu{height: 510px;margin: 3px;}
@@ -192,10 +190,8 @@ div#lienhe{position: fixed;
 		flex-flow: column wrap;}
 		#left{border-right: none;
 			border-left: none;}
-		body{    background-image: url("img/chuacau.jpg");
-    background-attachment: fixed;
-    background-repeat:repeat;
-    background-size: 100%;}
+		body{   background-image: none;
+background:#0c192c ;}
     #gioi img{display: none;}
     div#gioi{height: 520px;}
 
@@ -217,10 +213,8 @@ span#chao{font-size: 10px;margin-top: 18px;}
 
 }
 @media only screen and (max-width: 830px){
-	body{    background-image: url("img/chuacau.jpg");
-    background-attachment: fixed;
-    background-repeat:repeat;
-    background-size: 100%;}
+	body{   background-image: none;
+background:#0c192c ;}
     #gioi img{display: none;}
     li a{text-indent: 30px;}
     #tên{margin-left: 37%;display: inline-block;}
@@ -231,10 +225,8 @@ span#chao{font-size: 10px;margin-top: 18px;}
     span#chao{font-size: 15px;margin-top: 5px;}
 }
 @media only screen and (min-width: 800px) and (max-width: 1220px){
-	body{    background-image: url("img/chuacau.jpg");
-    background-attachment: fixed;
-    background-repeat:repeat;
-    background-size: auto;}
+	body{   background-image: none;
+background:#0c192c ;}
     div#xe{clear: left;width: 92%;}
      #tên{margin-left: 44%;font-size: 40px;display: inline-block;}
     #xe img{width: 92%;} 
@@ -248,10 +240,8 @@ span#chao{font-size: 10px;margin-top: 18px;}
     span#chao{font-size: 20px;margin-top: 5px;}
 }
 @media screen and (max-width: 767px){
-    body{    background-image: url("img/chuacau.jpg");
-    background-attachment: fixed;
-    background-repeat:repeat;
-    background-size: 100%;}
+    body{  background-image: none;
+background:#0c192c ;}
     #gioi img{display: none;}
     li a{text-indent: 30px;}
     #tên{margin-left: 37%;display: inline-block;}
@@ -264,3 +254,43 @@ span#chao{font-size: 10px;margin-top: 18px;}
 
 
 /* table: min-width: 740px; and max-width;1024px*/
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.bubbles{
+    position: relative;
+    display: flex;
+}
+.bubbles span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4fc3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4fc3dc44,
+                 0 0  50px #4fc3dc,
+                0 0  100px #4fc3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+
+}
+.bubbles span:nth-child(even){
+    background: #ff2d75;
+    box-shadow: 0 0 0 10px #ff2d7544,
+    0 0  50px #ff2d75,
+    0 0  100px #ff2d75;
+}
+@keyframes animate{
+    0%{transform: translateY(100vh) scale(0);}
+    100%{transform:translateY(-10vh) scale(1) ;}
+}
+.nen{position: fixed;
+z-index: -2;}
+
+
+
