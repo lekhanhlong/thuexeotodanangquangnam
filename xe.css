@@ -28,7 +28,7 @@ img#chay{animation: chay 20s linear 0s infinite normal;position: relative;}
 	100%{right:400px ; top: 10px}
 
 }
-li.tha{display: inline-block;}
+li.tha{display: inline-block;cursor: pointer;}
 .tha1{display: none;
 position: absolute;
 background-color: #FFFF66 ;
@@ -37,7 +37,7 @@ z-index: 10;}
 .tha1 a{color:#FF0000 ;padding:20px ;}
 .tha1 a:hover{background-color: #0099CC;
 font-size: 20px;}
-.tha:hover .tha1{display:block;}
+
 #left{background-color: #001100;height: 80px;
 	border: 3px double 	#00FF00;
 	outline: none;border-radius: 30px;
